@@ -1,0 +1,31 @@
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    height: 80px;
+  }
+  
+  .footer-content {
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  
+  .social-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-links li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-links a:hover {
+    text-decoration: underline;
+  }
+  
