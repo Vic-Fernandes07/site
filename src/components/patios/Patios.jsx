@@ -49,7 +49,7 @@ function Patios() {
         ))}
       </div>
       {notification && <div className="notification show">{notification}</div>}
-    </div>
+    </div>  
   );
 }
 
