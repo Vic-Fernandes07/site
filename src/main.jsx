@@ -4,7 +4,10 @@ import * as ReactDOM from "react-dom/client";
 import { StrictMode } from "react";
 import App from "./App.jsx";
 import Patios from "./components/patios/Patios.jsx";
-import Escolha from "./components/escolha/Escolha.jsx";
+import PatioSul from "./components/patiosul/PatioSul.jsx";
+import PatioNorte from "./components/pationorte/PatioNorte.jsx";
+import PatioCentral from "./components/patiocentral/PatioCentral.jsx"
+import Home from "./components/Home.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,9 +22,18 @@ const router = createBrowserRouter([
   {
     path: "/patios",
     element: <Patios />,
+  },{
+    path: "/",
+    element: <Home />,
   },
   {
-    path: "/escolha", element: <Escolha/>
+   path: "/patiosul", element: <PatioSul/>
+  },
+  {
+    path: "/pationorte", element: <PatioNorte/>
+  },
+  {
+    path: "/patiocentral", element: <PatioCentral/>
   }
 ]);
 

@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom'; // Importando useNavigate
 import './Patios.css';
 
 function Patios() {
+  const navigate = useNavigate(); // Inicializando o hook
   const [yards, setYards] = useState([
     { id: 1, name: 'Pátio Central', count: 15, color: 'var(--turquoise)' },
     { id: 2, name: 'Pátio Sul', count: 8, color: 'var(--orange)' },
@@ -13,7 +15,8 @@ function Patios() {
     setNotification(`Carregando detalhes do Pátio ${yardId}...`);
     setTimeout(() => {
       setNotification('');
-      window.location.href = `/yard/${yardId}`;
+      // Navegando para a rota do pátio
+      navigate(yardId === 1 ? '/patio-central' : `/yard/${yardId}`);
     }, 2000);
   };
 
