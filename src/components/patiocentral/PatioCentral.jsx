@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // Importando useNavigate
 import './PatioCentral.css';
 
 function PatioCentral() {
+  const navigate = useNavigate(); // Inicializando o hook
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedCar, setSelectedCar] = useState('');
 
@@ -24,7 +26,7 @@ function PatioCentral() {
   return (
     <div className="container">
       <header className="header">
-        <a href="/" className="back-button">← Voltar para Pátios</a>
+        <button onClick={() => navigate('/')} className="back-button">← Voltar para Pátios</button>
         <h1>Pátio Central - Veículos Disponíveis</h1>
       </header>
 

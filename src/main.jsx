@@ -7,6 +7,7 @@ import Patios from "./components/patios/Patios.jsx";
 import PatioSul from "./components/patiosul/PatioSul.jsx";
 import PatioNorte from "./components/pationorte/PatioNorte.jsx";
 import PatioCentral from "./components/patiocentral/PatioCentral.jsx"
+import Home from "./components/Home.jsx";
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,9 @@ const router = createBrowserRouter([
   {
     path: "/patios",
     element: <Patios />,
+  },{
+    path: "/",
+    element: <Home />,
   },
   {
    path: "/patiosul", element: <PatioSul/>
