@@ -16,7 +16,7 @@ function Patios() {
     setTimeout(() => {
       setNotification('');
       // Navegando para a rota do pátio
-      navigate(yardId === 1 ? '/patio-central' : `/yard/${yardId}`);
+      navigate(yardId === 1 ? '/patiocentral' : `/yard/${yardId}`);
     }, 2000);
   };
 

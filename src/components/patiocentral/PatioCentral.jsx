@@ -31,9 +31,9 @@ function PatioCentral() {
       </header>
 
       <div className="car-grid">
-        <CarCard car="Honda Civic 2023" price="R$ 150/dia" available onClick={() => openModal('Honda Civic 2023')} />
-        <CarCard car="Toyota Corolla 2022" price="R$ 180/dia" />
-        <CarCard car="Jeep Compass 2023" price="R$ 250/dia" available onClick={() => openModal('Jeep Compass 2023')} />
+        <CarCard car="Honda CiviHyundai HB20c 2023" price="R$ 150/dia" available onClick={() => openModal('Hyundai HB20')} />
+        <CarCard car="Fiat Mobi" price="R$ 280/dia" />
+        <CarCard car="Renault Kwid" price="R$ 450/dia" available onClick={() => openModal('Renault Kwid')} />
       </div>
 
       {modalOpen && (

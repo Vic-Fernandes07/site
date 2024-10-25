@@ -29,9 +29,9 @@ function PatioNorte() {
       </header>
 
       <div className="car-grid">
-        <CarCard car="Honda Civic 2023" price="R$ 150/dia" available onClick={() => openModal('Honda Civic 2023')} />
-        <CarCard car="Toyota Corolla 2022" price="R$ 180/dia" />
-        <CarCard car="Jeep Compass 2023" price="R$ 250/dia" available onClick={() => openModal('Jeep Compass 2023')} />
+        <CarCard car="Fiat Cronos" price="R$ 280/dia" available onClick={() => openModal('Fiat Cronos')} />
+        <CarCard car="Volkswagen Gol" price="R$ 120/dia" />
+        <CarCard car="Chevrolet Onix Plus" price="R$ 280/dia" available onClick={() => openModal('Chevrolet Onix Plus')} />
       </div>
 
       {modalOpen && (
