@@ -1,0 +1,116 @@
+:root {
+    --turquoise: #40E0D0;
+    --purple: #9932CC;
+    --yellow: #FFD700;
+    --orange: #FF6B35;
+    --lime: #ADFF2F;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    padding: 2rem;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .title {
+    color: var(--purple);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .yard-grid {
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    flex-wrap: wrap;
+    gap: 1rem;    
+    margin-top: 2rem;
+    justify-content: space-between;
+  }
+  
+ 
+ 
+  .yard-card {
+    width: 300px; /* Ajusta a largura para que todos caibam em uma linha */
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+
+  .yard-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+  }
+  
+  .yard-icon {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 1rem;
+  }
+  
+  .yard-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .stock-indicator {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+  }
+  
+  .stock-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+  
+  .stock-high { background-color: var(--lime); }
+  .stock-medium { background-color: var(--yellow); }
+  .stock-low { background-color: var(--orange); }
+  
+  .notification {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transform: translateX(150%);
+    transition: transform 0.3s ease;
+  }
+  
+  .notification.show {
+    transform: translateX(0);
+  }
+  
